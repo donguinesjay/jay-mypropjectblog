@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/articles', ['as' => 'articles.index', 'uses' => 'ArticleController@index']);
+
 Route::get('/', function () {
     return view('welcome');
 });
